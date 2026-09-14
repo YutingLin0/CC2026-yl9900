@@ -127,26 +127,26 @@ function randomizeSketch() {
 
   // randomized colors
   backgroundColor = color(
-    random(0, 255),
-    random(0, 255),
-    random(0, 255)
+    random(50, 255),
+    random(50, 255),
+    random(50, 255)
   );
 
   circleColor = color(
-    random(0, 255),
-    random(0, 255),
-    random(0, 255)
+    random(100, 255),
+    random(100, 255),
+    random(100, 255)
   );
   circleStrokeColor = color(
-    random(0, 255),
-    random(0, 255),
-    random(0, 255)
+    random(50, 255),
+    random(50, 255),
+    random(50, 255)
   );
 
   triangleColor = color(
-    random(0, 255),
-    random(0, 255),
-    random(0, 255)
+    random(100, 255),
+    random(100, 255),
+    random(100, 255)
   );
 
   lineColor = color(
