@@ -40,11 +40,23 @@
       distorted concentric rings that expand from different center points. 
       The main iterative process uses repetition, sine and cosine waves, 
       randomness, and mouse interaction to change the size, distortion, 
-      and distance between the two ripple fields. I thought it was really 
-      cool to experiment with the pen plotter and watch it continuously 
-      recreate my digital drawing, especially since I could switch colors 
-      and use different drawing utensils to change the final appearance. 
-      It took a few tries to get the result I wanted because I wasn’t sure 
+      and distance between the two ripple fields. I used the school’s LLM to 
+      help develop my original idea of creating two overlapping ripple forms 
+      into code. I described the kind of distorted, organic rings I wanted to 
+      create and the LLM helped introduce me to using sin() and cos() to calculate 
+      points around a circle and change their radius to create the wavy distortions. 
+      It also helped me understand how the angle could be stepped through with 
+      TWO_PI and used with vertex() to construct each ring as a custom shape. 
+      From there, I experimented with the code by changing the number and spacing 
+      of the rings, wave frequencies, random jitter, and amount of distortion. 
+      I also connected mouseX to the distance between the two ripple centers and 
+      mouseY to the amount of turbulence so I could interactively explore different 
+      compositions before plotting one.</p>
+
+    <p>I thought it was really cool to experiment with the pen plotter and 
+      watch it continuously recreate my digital drawing, especially since I  
+      could switch colors and use different drawing utensils to change the final  
+      appearance. It took a few tries to get the result I wanted because I wasn’t sure 
       how to center the drawing on the page, and sometimes the plotter lifted 
       or shifted the paper, causing some lines to be out of place. Overall, 
       I enjoyed using the plotter and was surprised by how precisely it 
@@ -60,6 +72,7 @@
    <ul>
     <li><a href="https://github.com/golanlevin/p5.plotSvg" target="_blank">p5.plotSvg library</a></li>
     <li><a href="https://p5js.org/examples/Angles-And-Motion-Sine-Cosine/" target="_blank">Sine and Cosine</a></li>
+    <li><a href="https://p5js.org/reference/p5/beginShape/" target="_blank">beginShape() and endShape()</a></li>
    </ul>
   
     <!--Replace with your own image-->
