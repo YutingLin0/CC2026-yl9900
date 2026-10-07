@@ -18,18 +18,18 @@ function draw() {
   translate(width / 2, height / 2);
 
   // Seconds Spiral
-  let startRadius = 40; 
+  let startRadius = 35; 
 
   for (let i = 0; i <= s; i++) {
     let angle = i * 14 - 50;
-    let r = startRadius + (i * 3.2);
+    let r = startRadius + (i * 3);
 
     // Anchor random values per line so they remain stable frame-to-frame
     randomSeed(i * 133);
     
     // Randomize length and stroke thickness for each line
-    let lineLen = random(8, 24);
-    let lineWeight = random(1.5, 4.5);
+    let lineLen = random(30, 50);
+    let lineWeight = random(10, 20);
 
     // Inner point (start of line)
     let x1 = cos(angle) * r;
@@ -54,8 +54,7 @@ function draw() {
 
   // Faint hour track
   noFill();
-  stroke(0, 0, 100, 0.2);
-  strokeWeight(1);
+  strokeWeight(10);
   circle(0, 0, hourRadius * 2);
 
   // Position hour circle like a clock hand 
@@ -79,7 +78,7 @@ function draw() {
   // Faint minute track
   noFill();
   stroke(0, 0, 100, 0.2);
-  strokeWeight(1);
+  strokeWeight(10);
   circle(0, 0, minuteRadius * 2);
 
   // Position minute circle like a clock hand
