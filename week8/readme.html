@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- p5.js Libraries -->
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <title>A Piece of Cake</title> <!--Update your title here-->
+  <!--Add style to your code within the style tag <style></style>
+  Read the W3Schools CSS Intro for more: https://www.w3schools.com/css/css_intro.asp 
+  -->
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      /*padding: 1em;*/
+      color: #41150b;
+      background-color: #faf3e7;
+    }
+
+    a {
+      color: rgb(195, 44, 169);
+    }
+
+    a:hover {
+      text-decoration: dashed;
+    }
+
+    h1 {
+      /* Insert your own style here */
+    }
+
+    h2 {
+      /* Insert your own style here */
+    }
+  </style>
+</head>
+
+<body>
+  
+  <h1>A Piece of Cake</h1>
+
+        <h2>Week 8</h2>
+
+        <!-- Your Week 8 Sketch -->
+        <!-- Review tutorial for more info: https://github.com/processing/p5.js/wiki/Positioning-your-canvas -->
+        <div id="week8-sketch">
+          <script src="week8/sketch.js"></script>
+        </div>
+
+        <p>For this week's sketch, I initially thought about creating an interactive cookie that users 
+          could gradually eat by clicking on it. However, I wanted to expand the idea to include more 
+          decorative interactions rather than just removing pieces, so I ended up designing a cake 
+          instead. I liked how a cake would allow users to experiment with different flavors and 
+          toppings while still keeping the original idea of eating something. I also wanted to 
+          challenge myself to create a three-dimensional appearance using basic 2D shapes. I decided 
+          on a geometric illustration style with muted colors to keep the design simple and playful.</p>
+        
+        <p>Users can choose between three fruit toppings, change the cake's flavor, and switch 
+          between decorating and eating modes. I liked the contrast between these two modes because 
+          one adds to the cake while the other takes something away. I used push() to add decorations, 
+          splice() to remove toppings and slices, and includes() to check which slices were still present. 
+          I also created a Cake class to organize how the cake is drawn and how individual slices behave.</p>
+
+        <p>One of the biggest challenges was figuring out how to create the cake's perspective, especially 
+          when individual slices were removed. At first, some of the layers overlapped awkwardly, and the 
+          cake didn't look quite right after eating certain slices. This made me realize how important drawing 
+          order is when creating the illusion of depth with 2D shapes. I also experimented with the interface 
+          and interactions throughout the process. Initially, I included a dragging feature for the toppings, 
+          but I eventually removed it because I felt that clicking to decorate was more straightforward. </p>
+
+        <p>I used an LLM to help me work through some of the more complicated parts of the code, especially 
+          the geometry calculations using sin(), cos(), and atan2(). I also used it to troubleshoot the 
+          overlapping cake layers and organize the array interactions. I learned about indexOf(), an array 
+          method I hadn't used before, which helped me find the position of a specific cake slice in the 
+          array so I could remove it using splice(). Throughout the process, I continued making adjustments 
+          to the visual design, colors, layout, and interactions based on what I felt worked best for the sketch.</p>
+
+        <ul>
+        <li><a href="week8/index.html" target="_blank">Link to sketch</a></li>
+        </ul>
+
+      <!-- Optional, share as needed-->
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://p5js.org/examples/Angles-And-Motion-Sine-Cosine/" target="_blank">Sine and Cosine</a></li>
+        <li><a href="https://p5js.org/reference/p5/atan2/" target="_blank">atan2()</a></li>
+        <li><a href="https://www.w3schools.com/jsref/jsref_includes_array.asp" target="_blank">includes()</a></li>
+        <li><a href="https://www.w3schools.com/jsref/jsref_indexof_array.asp" target="_blank">indexOf()</a></li>
+        <li><a href="https://p5js.org/reference/p5/colorMode/" target="_blank">colorMode()</a></li>
+        <li><a href="https://p5js.org/reference/p5/class/" target="_blank">class and constructor</a></li>
+      </ul>
+      
+        <!--Replace with your own image(s)-->
+        <!--You can limit the size of your displayed image using "height" or "width" -->
+        <img src="media/image1.png" height="300px" alt="This the alt description of this image. This is a sketch of strawberry flavored cake"></img>
+        <img src="media/image2.png" height="300px" alt="This the alt description of this image. This is a sketch of matcha flavored cake"></img>
+        <img src="media/image3.png" height="300px" alt="This the alt description of this image. This is a sketch of blueberry flavored cake"></img>
+</body>
+</html>
