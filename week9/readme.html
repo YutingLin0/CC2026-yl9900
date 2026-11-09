@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- p5.js Libraries -->
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <title>Rhythm in Pixels</title> <!--Update your title here-->
+  <!--Add style to your code within the style tag <style></style>
+  Read the W3Schools CSS Intro for more: https://www.w3schools.com/css/css_intro.asp 
+  -->
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      /*padding: 1em;*/
+      color: #072d48;
+      background-color: #e6e9e8;
+    }
+
+    a {
+      color: rgb(127, 47, 197);
+    }
+
+    a:hover {
+      text-decoration: dashed;
+    }
+
+    h1 {
+      /* Insert your own style here */
+    }
+
+    h2 {
+      /* Insert your own style here */
+    }
+  </style>
+</head>
+
+<body>
+  
+  <h1>Rhythm in Pixels</h1>
+
+        <h2>Week 9</h2>
+
+        <!-- Your Week 9 Sketch -->
+        <!-- Review tutorial for more info: https://github.com/processing/p5.js/wiki/Positioning-your-canvas -->
+        <div id="week9-sketch">
+        </div>
+
+        <p>For my audio visualization, I wanted to create something more abstract and upbeat that could 
+          visually capture the rhythm and energy of music. I was inspired by generative art that uses 
+          repeated geometric shapes, grids, and patterns to create movement. From that I wanted to experiment 
+          with how a grid system could become more dynamic and fluid across the screen. I used a combination of squares, 
+          dots, and vertical lines to create patterns that continuously shift and form larger shapes as 
+          the music plays. I kept the background black so it can contrast with the brighter colors.</p>
+        
+        <p>For my audio source, I chose Digital Blast (Glitch Minimal Dub Techno) by Musinova from Pixabay. 
+          I liked its electronic rhythm and especially the deep bass sounds that appear throughout the track. 
+          Using p5.Amplitude() and p5.FFT(), I analyzed the overall loudness and different frequency ranges of 
+          the music and mapped them to different visual properties. The amplitude controls the size of the 
+          shapes, the middle frequencies affect the movement and distortion of the grid, and the higher 
+          frequencies change the distribution of the patterns. I also wanted to make the deeper bass sounds 
+          more prominent, so I used the lower frequencies to trigger color changes in the main pattern. 
+          When these sounds become stronger, the purple shapes transition into other bright colors before 
+          gradually returning to purple. Sudden bass hits also trigger colorful squares that appear and 
+          fade away across the canvas.</p>
+
+        <p>Through these mappings, I wanted the visualization to reflect both the repetitive rhythm and 
+          the unexpected changes in the music. The grid provides a consistent structure, while the shifting 
+          patterns and colors make it feel less predictable. I chose smooth transitions for the movement and 
+          color changes because I wanted the visuals to flow with the music rather than feel disconnected from 
+          it. For the implementation, I referenced our class notes on sound analysis, particularly using 
+          p5.Amplitude() and p5.FFT(), along with concepts from previous weeks such as arrays, loops, 
+          conditional statements, map(), lerp(), and sin() and cos() for movement. I also referred to the 
+          p5.js sound reference to better understand how audio data can control visual elements. I used the LLM 
+          to help troubleshoot differences between versions of the p5.sound library, develop the frequency 
+          analysis and beat detection, and for calculations to draw the composition. I also used it to explore different ways 
+          of mapping the music to visual effects, then adjusted the patterns, colors, and sound responses based 
+          on what I wanted to emphasize in the music.</p>
+
+        <ul>
+        <li><a href="week9/index.html" target="_blank">Link to sketch</a></li>
+        </ul>
+
+      <!-- Optional, share as needed-->
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://pixabay.com/music/upbeat-digital-blast-glitch-minimal-dub-techno-324062/" target="_blank">Musinova. Digital Blast (Glitch Minimal Dub Techno). Pixabay, 2025.</a></li>
+        <li><a href="https://p5js.org/reference/p5.sound/" target="_blank">p5.sound reference</a></li>
+        <li><a href="https://idmp5.github.io/coding/promise-await/" target="_blank">IDM: promises, async and await</a></li>
+        <li><a href="https://idmp5.github.io/creative-coding/sound-processing/" target="_blank">IDM: sound processing</a></li>
+        <li><a href="https://docs.google.com/document/d/1ulK8Uye1ImBhstP3M6S7NdVq0_-VxLAt_UugBzXpHYE/edit?tab=t.0#heading=h.u2yj16cuspyb" target="_blank">Melody's notes</a></li>
+        <li><a href="https://p5js.org/reference/p5.sound/p5.Amplitude/" target="_blank">p5.Amplitude</a></li>
+        <li><a href="https://p5js.org/reference/p5/lerp/" target="_blank">lerp()</a></li>
+      </ul>
+      
+        <!--Replace with your own image(s)-->
+        <!--You can limit the size of your displayed image using "height" or "width" -->
+        <img src="media/image1.png" height="300px" alt="This the alt description of this image. This is a sketch of purple patterned squares, dots and lines."></img>
+        <img src="media/image2.png" height="300px" alt="This the alt description of this image. This is a sketch of yellow patterned squares, dots and lines."></img>
+        <img src="media/image3.png" height="300px" alt="This the alt description of this image. This is a sketch of cyan patterned squares, dots and lines."></img>
+</body>
+</html>
